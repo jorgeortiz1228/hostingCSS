@@ -1,3 +1,17 @@
+@font-face {
+    font-family: "AnonymousPro";
+    src: url("anonymousPro-Regular.ttf") format("truetype"),
+         url("anonymousPro-Regular.ttf") format("truetype"),
+         url("anonymousPro-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "AnonymousPro";
+    src: url("anonymousPro-Bold.ttf");
+    font-weight: 700;
+}
+
+
 main {
     padding-top: 2rem;
 }
@@ -53,6 +67,12 @@ main {
     padding: 1rem;
     color: #0e4f1f;
     background: white;
+    /* font-family: "Roboto", sans-serif; */
+    /* font-weight: 900; */
+    /* font-style: italic; */
+    /* font: 900 1.25rem "Roboto", sans-serif; */
+    /* font-style font-variant font-weight font-size/line-height font-family   */
+    /* text-shadow: 2px 2px 7px #b9b4b4; */
 }
 
 .clearfix {
