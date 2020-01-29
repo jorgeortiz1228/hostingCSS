@@ -48,13 +48,17 @@ main {
 
 .package__badge {
     position: absolute;
-    margin: 1.25rem;
+    /* margin: 1.25rem; */
+    margin: 0;
     top: 0;
     right: 0;
     font-size: 0.75rem;
     color: white;
     background: #ff5454;
     padding: 0.5rem;
+    transform: rotateZ(45deg);
+    /* transform-origin: top left; */
+    transform-origin: center;
 }
 
 .package__subtitle {
