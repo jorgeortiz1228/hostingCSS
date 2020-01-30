@@ -31,12 +31,14 @@ main {
     margin: 1rem 0;
     width: 80%; 
     position: relative;
+    overflow: hidden;
 }
 
 .package:hover,
 .package:active {
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     border-color: #ff5454;
+    animation: pkg-up 2s ease-out forwards;
 }
 
 .package a {
@@ -56,9 +58,12 @@ main {
     color: white;
     background: #ff5454;
     padding: 0.5rem;
-    transform: rotateZ(45deg);
+    /* transform: rotateZ(45deg) translateX(3.5rem) translateY(-1rem); */
+    transform: rotate(45deg) translate(3.5rem, -1rem);
     /* transform-origin: top left; */
     transform-origin: center;
+    width: 12rem;
+    text-align: center;
 }
 
 .package__subtitle {
@@ -135,5 +140,17 @@ main {
     #free:hover,
     #free:active {
         border-right-color: #ff5454;
+    }
+}
+
+@keyframes pkg-up {
+    0% {
+        transform: translateY(0);
+    }
+    33% {
+        transform: translateY(-1.5rem);
+    }
+    100% {
+        transform: translateY(-1rem)
     }
 }
